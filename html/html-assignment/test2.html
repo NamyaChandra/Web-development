@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample form </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p,label{
+                background-color: bisque;
+            }
+        </style>
+ 
+    </head>
+<body>
+<form>
+    <!-- UserName and Password-->
+    <p><label for="Username">User Name</label><br></p> 
+    <input type="text" id="Username" name="Username"><br>
+
+    <p><label for="Pass">Password </label><br></p> 
+    <input type="password" id="Pass" name="Pass"><br>
+
+    <!--Radio for gender-->
+    <p>Gender</p>
+    <input type="radio" id="Male" name="male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="female">
+    <label for="Female">Female</label>
+
+    <!--Checkbox for vehicle-->
+    <p>Choose your vehicle</p>
+    <input type="checkbox" id="bike">
+    <label for="bike">Bike</label>
+    <input type="checkbox" id="car">
+    <label for="car">Car</label>
+    <br>
+
+    <!--Dropdown for type of car-->
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    <br>
+    
+    <p>Click here to go to w3schools</p>
+    <br>
+    <a href="https://www.w3schools.com/">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="No image found">
+    </a>
+    <br>
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
+

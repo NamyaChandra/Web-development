@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>
+            Assignment-13
+        </title>
+        <style>
+            body {
+			  background-color: #00a087 ;
+			  height: 100%;
+  			  margin: 0px;
+  			  font-family: Arial, Helvetica, sans-serif;
+			  overflow: auto;
+			}
+			.main {
+  			  padding: 0 30px;
+              margin: 20px;
+			}
+            .upper{
+              background-color: #fac03e;
+			  border: 5px solid #f44540;
+			  text-transform: uppercase;
+			  padding: 25px;
+			  margin: auto;
+			  text-align: center;
+            }
+            .upper button{
+                background-color: #fac03e;
+                border: 3px solid #f44540;
+                color:#f44540;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 15px;
+                padding: 5px;
+                height: 40px;
+                width: 100px;
+            }
+            .mid{
+                display: flex;
+                margin-top: 10px;
+            }
+            .left{
+                width: 45%;
+                height: auto;
+                background-color: rgb(130, 182, 241);
+                border: 5px solid #f44540;
+
+            }
+            .left img{
+                width: 250px;
+                display: block;
+                object-fit: cover;
+                margin: auto;
+                padding-top: 15px;
+                object-position: center;
+                background-repeat: no-repeat;
+            }
+            .right button{
+                background-color: transparent;
+                border-color:white;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                margin: 15px;
+                height: 30px;
+                width: 80px;
+            }
+            .right{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .right-top,.right-bottom{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: rgb(130, 182, 241);
+                border: 5px solid #f44540;
+                margin-left: 10px;
+                color: white;
+            }
+            .right-bottom{
+                margin-top: 8px;
+            }
+            .right-top{
+                margin-bottom: 8px;
+            }
+            .image{
+                margin: 10px;
+            }
+            figcaption{
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="upper">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur perferendis iure l
+                    aborum, eum quaerat necessitatibus.</p>
+                    <button>Button</button>
+            </div>
+            <div class="mid">
+                <div class="left">
+                         <img src="data:image/png;base64,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" 
+                        alt="Image not found">
+                        <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia earum porro officia veniam facilis dicta, doloribus ducimus cupiditate labore quae et asperiores in officiis eum sed aspernatur voluptates sint. Rem!</figcaption>
+                    </div> 
+                <div class="right">
+                    <div class="right-top">
+                        <div class="image">
+                             <img src="data:image/png;base64,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" 
+                                alt="Image not found">
+                        </div>
+                        <div class="txt">
+                            <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae optio sapiente quaerat distinctio dignissimos neque! 
+                                Eaque quo maxime, animi doloremque rerum et, veniam vel numquam nemo cum, quae tempore.</figcaption>
+                                <button>Button</button>
+                        </div>
+                        </div>
+                        <div class="right-bottom">
+                            <div class="image">
+                                <img src="data:image/png;base64,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" 
+                                    alt="Image not found">
+                            </div>
+                            <div class="txt">
+                            <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae optio sapiente quaerat distinctio dignissimos neque! 
+                                Eaque quo maxime, animi doloremque rerum et, veniam vel numquam nemo cum, quae tempore.</figcaption>
+                                <button>Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </body>
+</html>

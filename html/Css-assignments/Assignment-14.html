@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Assignment-14</title>
+        <style>
+            body{
+                background-color: rgb(0, 140, 255);
+                height: 100%;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                overflow: auto;
+            }
+            .main{
+                padding: 0;
+                margin: 30px;
+            }
+            .upper{
+                width: 100%;
+                width: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+                position: relative;
+                max-width: max-content;
+                margin: auto;
+            }
+            .nav{
+                background-color: rgb(1, 68, 131);
+                display: inline;
+                justify-content: space-between;    
+            }
+            ul{
+                list-style-type: none;
+                margin: 0 auto;
+                padding: 0px;
+                background-color: rgb(1, 68, 131);
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+            li{
+                background-color: rgb(161, 3, 3);
+                margin: 10px;
+                width: 120px;
+                border-radius: 15px;
+            }
+            li a{
+                display: flex;
+                justify-content: space-evenly;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                padding: 12px 14px;
+            }
+            li a:hover{
+                background-color: maroon;
+                border-radius: 15px;
+                color: white;
+            }
+            .mid{
+                margin: 30px;
+                background-color: white;
+                border: 5px solid rgb(161, 3, 3);
+                text-align: center;
+            }
+            .lower{
+                margin: 30px;
+                display: flex;
+                align-items: flex-start;
+                background-color: transparent;
+                flex-direction: column;
+            }
+            .l1,.l2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            button{
+                background-color: rgb(161, 3, 3);
+                border-radius: 18px;
+                height: 60px;
+                width: 120px;
+                margin: 15px 30px;
+                color: white;
+                
+
+            }
+            .image {
+                border-radius: 10px;
+                margin: 20px;
+                padding: 10px;
+            }
+            .txt{
+                margin: 20px;
+                padding: 10px;
+                color: white;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="upper">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Product">Product</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mid">
+                <h1>Hello world!!!</h1>
+            </div>
+            <div class="lower">
+                <div class="l1">
+                    <div class="image">
+                        <img src="data:image/png;base64,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" 
+                           alt="Image not found">
+                   </div>
+                   <div class="txt">
+                       <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae optio sapiente quaerat distinctio dignissimos neque! 
+                           Eaque quo maxime, animi doloremque rerum et, veniam vel numquam nemo cum, quae tempore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur beatae repellendus nesciunt non ipsum quibusdam, fugit aliquid repudiandae nihil eveniet dolorem fugiat. Assumenda numquam dolores placeat quis, inventore excepturi.</figcaption>
+                           <button>Button</button>
+                   </div>
+                </div>
+                <div class="l2">
+                    <div class="image">
+                        <img src="data:image/png;base64,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" 
+                           alt="Image not found">
+                   </div>
+                   <div class="txt">
+                       <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae optio sapiente quaerat distinctio dignissimos neque! 
+                           Eaque quo maxime, animi doloremque rerum et, veniam vel numquam nemo cum, quae tempore.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ut doloribus officia suscipit laudantium incidunt optio libero. Pariatur sit, cumque rerum tenetur eligendi possimus eveniet, dolore ipsam, eaque voluptatem excepturi!</figcaption>
+                           <button>Button</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+            header{
+                width: 100%;
+                height: 65px;
+                text-align: center;
+                font: 25px medium bold black;
+                background-color: rgb(2, 160, 100);
+                padding: 35px;
+            }
+            ul{
+                list-style-type: none;
+                display: inline;
+                float: left;
+                background-color: rgb(53, 52, 52);
+                width: 100%;
+                margin: 0px;
+                padding: 0;
+                
+            }
+            div{
+                margin: 0;
+                background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYF/8QAHRABAQEAAgMBAQAAAAAAAAAAAAECAxEhMUESYf/EABoBAQADAQEBAAAAAAAAAAAAAAIAAQMFBAb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIRA//aAAwDAQACEQMRAD8A+whMjhMtnbpMlyLJchWdJkuRZLkKzq4WDi8hQpITIoTI0CRUTFQaNUqekxUUDsd+OMiMzMimZmQXx+S5oskw9zr0uS5FkuQrKkySDyTIVnSQmRwkCgvJIPJIoKuLiIuAKlRKooK6zMiMzMgszMinxuabAMGw99demyWByXIVlSZJmjyvPsLApZSQcXkKFLlco8rg1nSRcRFwKKu1xMVFBXXXI6pHGjVviBWcZkU+NwfIMmy6NdmkyaByWBWVhIvPseSZGwKWLg4uUOM6WLg8+yQApMkyLJMhQq4uIi4IOx1yOqU1cdrlQa4zMinx0JgcJl07HZpc+l5FCZoWM6aLgsrl8hwKbKoOUko2M6XNJmhyTNZ2BSwmRQmQoUsVlGSZChXXXFCLn1KvqUGszMgvjovN8Iio6vHapZVZRmryPApJSZFCZGwKWVcoouUbGdNmkyHJIzsCmhMhzS5rOxnS5JmizSSs6FJHXI6FFy+3Ha5VDXGZli+OVEux2OO0SKlHKSDYNXmklFFyjwKWUkoZVyjxnTykzQSkzQsZ0+S5Bmlze2WoFPlcFkuWVCljqYtlQcTVJojXGZxYvjo7HO3XbdtcVKOKiuBSSrlFKqVOM6aVWaCaXKNjK16M0krzzS86C5Z2vTmmxXmzoudf1lrIdevNJmvPjR8VhqKp8rHkkYUKyapOgGoZmWD413tHbdu9x3Cduyj7btfGeqXt3sP6d/ScY2l7XNPP+lTSrllqvRNEm3lml50NyytezOjY08Odm49stZDr9DGno475fn8e/L1cW3n3lXXvxYWPNxaejDybi1I0tOmQ0bMywfFOMz6F2qzlrMtlWld7cZbLTvbSsymOlyqlZlMqvNpsWszOsz4t7erhtZmG1Pbw2vZhmeL0OLTp1nmqUbMygf/Z);
+                object-fit: fill;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: block;
+                padding: 14px 16px;
+                margin: 0;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: black;
+            }
+            .container{
+                display: flex;
+                max-width: fit-content;
+                justify-content: center;
+                align-items: center ;
+                margin: 0;
+                margin-top: 0;
+                padding: auto;
+            }
+            div.as{
+                width: 100%;
+                height: 500px;
+            }
+            footer{
+                background-color: rgb(53, 52, 52);
+                width: 100%;
+                margin: 0px;
+                padding: 0;
+                text-align: center;
+                color: white;
+            }
+            h2{
+                text-shadow: 2px 2px 5px red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+        </nav>
+        <hr>
+      <br/>
+      <div class="container">
+        <div class="as" style="width: auto;">
+            <aside>This is aside.should be placed like a sidebar.</aside>
+        </div>
+            <div style="width: auto;">
+                <section style="padding: 15px;"> 
+                    <p>This is section</p>
+                    <article>
+                        This is article inside the section.
+                    </article>
+                </section>
+            </div>
+       </div>
+        <footer>Footer</footer>
+        <h2>Heading</h2>
+    </body>
+</html>

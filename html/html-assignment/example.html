@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>
+            Html structure
+        </title>
+        <style>
+            *{
+                border-collapse: collapse;
+                border-radius: 2px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .flex-container{
+                display: flex;
+                border-collapse: collapse;
+                height: 600px;
+            }
+            .container{
+                width: 80%;
+                border: 1px solid rgb(71, 71, 71);
+                border-collapse: collapse;
+                background-color: rgb(219, 219, 219);
+            }
+            .cell{
+                height: 150px;
+                width: 350px;
+                border: 1px solid rgb(228, 228, 228);
+                margin: 10px;
+                padding: 14px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .row{
+                width: max-content;
+            }
+            ul.navbar{
+                list-style-type: none;
+                text-decoration: none;
+                
+
+            }
+            .navbar li{
+                border: 1px;
+                border-collapse: collapse;
+                border-radius: 5px;
+                margin: 10px;
+                width: 150px;
+                text-decoration: none;
+                color: rgb(92, 90, 90);
+                float: left;
+            }
+            .navbar li a{
+                text-decoration: none;
+                color: rgb(95, 95, 95);
+                display: block;
+                padding-left:15px ;
+               
+            }
+            .navbar li a:hover{
+                background-color: rgb(71, 71, 71);
+                color: beige;
+                border-radius: 8px;
+            }
+            .navigate{
+                width: 20%;
+                border-top: 1px solid rgb(71, 71, 71);
+                border-bottom:1px solid rgb(71, 71, 71); 
+                border-left: 1px solid rgb(71, 71, 71);
+                border-collapse: collapse;
+                background-color: rgb(214, 214, 214);
+            }
+            .min{
+                width: 100%;
+                text-align: justify;
+                padding-left: 15px;
+            }
+            .table{
+                width: 70%;
+                display: flex;
+                color: rgb(70, 70, 70);
+               
+            }
+            ul.fun{
+                display: flex;
+                list-style-type: none;
+                
+            }
+            ul.fun li{
+                border: 1px solid rgb(71, 71, 71);
+                border-collapse: collapse;
+                margin: 10px;
+                width: 70px;
+            }
+            h1{
+                padding-top: 20x;
+                padding-bottom: 50px;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bar">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAACenp6YmJhvb28pKSnb29vo6OjU1NTDw8N4eHghISHu7u709PTQ0NDx8fGFhYXh4eGvr69RUVHBwcGQkJB9fX27u7vJyclubm6ioqJhYWElJSVCQkKzs7OpqakUFBQMDAxlZWVVVVUzMzOKioobGxtJSUk8PDxSUlLgqdxaAAAFRElEQVR4nO2ch3KqQBSG99ggiCJ6gy32Eu/7v+DdRZNroWxFYv5vMiODwPqRw7bhLGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANmgaMuN/jYbWqb0q/Fb0RP5U4jei2H05j4w/aEdvrkuZEQVhhzquy3mE39mpF7k2bBIlIWN+9Yb8zrY8xjynhr13okH6oFdu2BCRIzZcGvYORIdLReYvPGflZMAjZxCdN90Z9gZE1VTUDyV/R47AlWGYcD8nVy5DRM771Z11Y+gFRLObPWFSTZRGg/s768LQmxKt7vb1K6lpROQ07n+NdcN4SzR82FtFXeq17iMn3WvZsDOnzTJjv3vDOCNyBHYNOztajzO/cW2YHTkCm4b+J7Xzerl9clnTiDubFTkCe4b9Be2d93Ez8f9SNztyBLYMJyc6TaxcSZV+QeQI7Bi+temzX3hENHQTpfzO7ovvrA1DPggb+SXHuGkPJ3talEWOueH4SLvyX++iLv1TGjkCU8Ml0Vxm9G7fkN/Z0sgRmBkOibZysxO2DZdrmstd0cQwnSSQPNau4VAycgT6ht+DaCls1jQqd1bf8DL98gTExJZKy6NleDuIrhS1yBFoGN4PoqWIhpFqORlcTb9Io2woBtGPg7BSfPMZYRE5B/XIUTTs8UEKbZOWMnOaq590w1QjcjQM+9Te79safNCHzmnXF0g09NQNtYOtYzo+jEhz6KJsqNmsGbeH2g13VYY909FT7Q2N+QGGhj2E2hsa//NhaOtEGNo/8YvaG/6C9lDvtP/U3tCY2hvGy1dvD1//OXz9uvQXGI5f/Tk0pvaGsemdqb0h6tJSYGjrRBjm8vrPIes8rz1Ummj9ge1hWNX40HSAWHvDZz6H1UTpM+tSGN7wIw1f/TmsrC6VeX2piNobGlP7KGWmr2LU3vD1axoYlgJDWyfqGzYwm1hC7Q2N39urveEveA5hWMYPMDR+60vzzT3FfHxtwxUdu93uccdYc8M3qMcvxT+7G8Ym6UZ3vWXssL7bJ4Zd4vAxNxQ76PzVZsbYKL3gp3hxnx84ZWyw7p7axxFjs016lSZju25731ZbNULT0O/SKAk4vNRxi3/yHxSLz6DFv0w3gqDB2PJrX+e8jx/+JrZaE244T4LW8nI4NxykR/AL9abnk1dBMEiC90sJQWvI5f8SUaBUj2sZLvvewnR4qBWlXqL+xraG4XKt+3bvDeo1jbfNTpstRt3Ql89uKUTVMJ7npc0Wo2g4pD2zlHeiZtiZ56fNFqNkONuki4vYQcXQH9ExP2225FwFQ6KBxbwhecP+J+31lxWSNnw/sdhqXpSs4WRhlpAsZ5jmRdnIArpCznCyp1N5WmkRUoahZnZLITKGIm3WtOEtN4ySBTN9OyiLcsNxl3bGHYtSwzBwtSxNmSHvWEgkXJdTbBixtU5emxTFhvIJyWUUGXoB9dwtylZkKNJmbZWcbxi39HpJsuQbrshixyLX0GczzV6SLHmGM7sdixxD3kty+e9LyTZsWm+YsgzDRfHiInbIMNRMmy3m0XAyY4sqlqV5MOw9rOplhXtD3kva2S8lizvD6OCo4b0zXMosLmKHG8PwYT04a1wbjmnAqvK7MRSrlqlPT0hyZUiyi4vY4dsw1pp+kebLcDVng2oXlb0Y6k6/SHM25L2IrctSskgN89eDs0aaj39SW1zEDh5NOiP6cOwnDBMKo2cs2xLSB7UraHj9Jy5aXbJqmS1mjSfRvF+1EwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKA2/APuU0RaqodJWAAAAABJRU5ErkJggg==" 
+            alt="Image not found" height="50px" width="100px">
+            <input type="search" value="Search..." style="margin: 18px;"/>
+        </div>
+        <hr/>
+        <div class="flex-container">
+            <div class="navigate"> 
+                <ul class="navbar">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#Wallet">Wallet</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="min">
+                    <H3>Overview</H3>
+                    <p>Welcome back!!</p>
+                </div>
+                
+                <div class="table">
+                    <div class="row">
+                        <div class="cell" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfF69WachmstWk2AEu41TEMCGZ054t1Khx1Q&s); background-size: cover;">Your balance
+                            <h1>$ 4500</h1>
+                            <span class="card" style=" float: right; text-align:left; margin-bottom:20px;">
+                            Card: **** **** 2345</span>
+                        </div>
+                        <div class="cell" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8W0vDkWo_fYiKcKl2HLa7fa45duInWJybwg&s); object-fit: fill;">
+                            <H3>Details</H3>
+                            <p style="text-align: left;">
+                            Name: ABC <br>
+                            Email: xyz@gmail.com <br>
+                            Phone: ********** <br>
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="cell" style=" background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw0EuA-Z9fWUiykPHRwjwWwsymTMrvzmFJA&s);
+                        background-size: cover; background-position: center;background-repeat: repeat;">
+                            <figcaption>History</figcaption>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYK_UZyhrvTmQr4M3YnlBUncQWQvXpVZWYcQ&s"
+                             alt="Image not found" height="140px" width="250px">
+                        </div>
+                        <div class="cell" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDg8NDQ0NFREWFhURFRMYHSggGBolGxUVITEhJSkrLjouFx8zODM4NygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAIwBZwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAACAQADBAUH/8QAKxABAQABAgUEAgICAwEAAAAAAAECAxESE0FRYQQxcaEhkRRSsdGB8PFC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP0biKVyv4qyg6ynL5cZke4Om5SucpSge5Sue5bge9XcN1gOkyLiDHE9gXiWWtF3BZav5TcpQT8rvWXcG3bdd22gNu26cI38Ae7bue7bg6bpuG7bge7bhu24HunEG7bgW6XId0tArkm47paBWjum6bgtqWpaloNalqVNwa1LWtSglo1rW3BJfyq4YsDz3/Y2bL1/a7gkyLcbh2H2B2lKVxmS40HbiPH8hhj3dZQPHE3OUpvfYDlXdscKU0/IJKspTBuAEKNwNwXwCtunDeyAe7bjuwHK24xga4jZYW7bgG6bnZK55Y2Au7bue7bge7bhxNaBbtcnPdrQPdLQ3TiA903DdOIDtHcbkNyA90tC5JxAVo3JNrSkBNjxxPDSvvXWYyA5zFj2YHy9/csa5WlKDruvu5ynhjaDTS39nXHRuPl0wmzvp4W+Aebc8MLXtx0pPNLl49gebHCTy6O3Jx7fazRx/wC0HGE7zSx7HMZ2gPPFmN7V6YoPNw3tV4L2v6ekgeTa9qz1rsDxXGf+Jy/P7ey6eN6JdCd7PsHiuN7Du9l0L3lDLTvWfQPPu253Tg3SvSgm6bpccp0o7gV2c8sO1LiTcHPKWDxOu6Xa9AcuJOI8sIF0/IJck4k4b8pw5dgLiS0eHL+t/RTRzvSwB4m4nSenvU5o/AOExpSdnox0d/LtjoSe4PLhp2u+GlI77DQDYadGgKKwPh3Isa6TQ/P5vXo9ej6bxw/5Bw09K+9/T2aelfiOunpyfPd1gJp6cnT8uowoCwokWASxCBYsTYoCqhAytGgKrMDKygzMoDlhL7yOeWhOls+3ZgeTL0+XT8uWen3x+n0EB8u6U+Buj5fUywxvvI55enx8z/kHzro+U5N7x7svS9r+4F9Nl3gPHyb3jcny9V9Nl4/bfx8vH7B5uVj5WYYzo9H8bLvFnpu+X6gPMnh7JoYzz8lMZPabA8mOjlfEdMdGT3/P+HejQBKQ0Bo06NAKNOjQHqisDljhJ7R0g/7IChQYQFCiYrAKFBhQFhQYUAlRYCxYywFWIsBYsRQZWaAsZmBmVgRlQErKgIhJQFKVEERUAUpUaCUSogg0qNAaNKiA0aWQ5ALL1YHP/ZDCAoQwgOLEiwChQYUAos6DOhQCWIsAliLAVYiwFVFBY0aNAVYjQFZmBkVAZFQEZmBKJUQRFQEo0qNBKJUQGotQBo0qNAaNXLKOdyAmcrkoBzFmdcdylB246UzvdxlKUHaZ3uUzcZWupJ70Homoc1I8nPx7t/Inag9szjpjY+d/J7T7b+Rl2gPprHzP5Ofcp6rPuD6UKPnT1N62nNW3/wCr+we9Y8HHl3v7WZ5f2v7B74rwzUy/tVmrl3B7d1ePnZzqc9Rl2gPUzzz1HefZzXnmA7M5zVx7lLKCszAyM1BEVKCJVqUERagDUqpQSiVDLKT3BqNc8tXs55ZXuB5Zz5c7kFrWg1o2paO4Luw7/lAcrnJv+R506POsB3516SJdTLu5wgL7VIQLCgwoBRRlKAUWIoLFSKBY5WdXTHVrkoPRNWHjZeseVYD2Ls8kyvSnNXLuD0bNs4zXvaFPUeAdWDn4+Vmrj3+gdJle9WauQc3HunHj/aA7c7wU1Z5efjx7xuZj/aA9Mzndnlupj3HnY9weyo8d9T23T+Xe37B7KNeK+qy8Dda333B7LnJ1c8tadI8vNG6kB3y1LXO5Od1Rup4B0tG1zuoN1KDpuNrnc6GWV7g7WjcnG0KDvxzuzzz3UHHqsPlTz17FNKefoAhSnNKefpeVPP0AblC5U8/RzSnkAU+XPJcuefoAiw5pzyvLnkBiwppzyU055AIUKac8lNOeQBS5cXlwBYuH5WYQB3XcuCJwQE3bdeH5Xh+QTdl4fluH5BE3Lh+U4fkEZeFuCAO6OnBB4AFNy4W5c8gG6V05cTlzyDmldOCeUunAcxrpy55a6c8g5Id055Sac8/QOdGuvLnlOVPIONF3ulPI8qeQcox8qb9WB//Z); 
+                        object-fit: cover; ">Functions 
+                            <div class="fun" >
+                                <ul class="fun">
+                                    <li>Scan</li>
+                                    <li>Pay</li>
+                                    <li>Send</li>
+                                    <li>Request</li>
+                                </ul>  
+                            </div>
+                        </div>  
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
